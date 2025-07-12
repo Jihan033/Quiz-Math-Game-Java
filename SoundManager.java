@@ -8,7 +8,6 @@ public class SoundManager {
 
     // Metode untuk memainkan musik latar belakang
     public static synchronized void playBackgroundMusic(String filepath) {
-        // Jika musik yang diminta sudah sama dan sedang berjalan, jangan lakukan apa-apa
         if (filepath.equals(currentMusicFilepath) && backgroundMusicClip != null && backgroundMusicClip.isRunning()) {
             return;
         }
@@ -28,7 +27,7 @@ public class SoundManager {
                 backgroundMusicClip.open(audioInput);
                 backgroundMusicClip.loop(Clip.LOOP_CONTINUOUSLY);
                 backgroundMusicClip.start();
-                currentMusicFilepath = filepath; // Simpan path musik yang sedang dimainkan
+                currentMusicFilepath = filepath; 
                 // System.out.println("SoundManager: Memainkan " + filepath); // Untuk debugging
             } else {
                 System.out.println("SoundManager: File musik tidak ditemukan: " + filepath);
@@ -53,8 +52,8 @@ public class SoundManager {
             backgroundMusicClip.close();
             backgroundMusicClip = null;
         }
-        currentMusicFilepath = null; // Selalu reset ini
-        // System.out.println("SoundManager: Musik latar belakang dihentikan."); // Untuk debugging
+        currentMusicFilepath = null; 
+        
     }
 
     // Metode untuk memainkan suara klik
@@ -82,6 +81,6 @@ public class SoundManager {
     // Panggil ini saat aplikasi benar-benar ditutup untuk membersihkan sumber daya
     public static synchronized void shutdown() {
         stopBackgroundMusic();
-        // Tambahkan logika pembersihan lain jika perlu
+       
     }
 }
