@@ -1,0 +1,9 @@
+Langkah - Langkah meemainkan permainan Quizmath 
+1. klik file tubes.exe
+2. buka aplikasi
+3. lalu klik start
+4. pilih level sesuai yang anda inginkan easy(yang paling mudah), medium(pertengahan) dan hard(yang paling susah)
+5. pilih jawaban yang benar jika benar akan keluar hasil skor
+6. anda juga bisa memulai permainan yang baru dengan klik menu, dan replay untuk memainkan game itu kembali.
+
+selamat bermain!!!!!😁😁😁😁😁
